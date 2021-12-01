@@ -13,18 +13,27 @@
                 <div class="col-6 mx-auto">
                     <h1>Construyamos algunas cosas a continuación, con:</h1>
                     <ul id="listado"></ul>
-                    <p id="favoritismo">Yo prefiero a</p>
-
+                    <p id="favoritismo">Yo prefiero a </p>
                 </div>
-            </div>
+        <div class="col-8 mx-auto">
+        <img src="https://picsum.photos/400/200?random=1" class="w-100 shadow my-2">            </div>
         </div>
+    </div>
         <div class="container-fluid g-0">
             <div class="row g-0">
                 <div class="col-12">
-                    <img scr="https://picsum.photos/200/300?grayscale" class="w-100">
+                    <img src="https://picsum.photos/1600/400?random=2" class="w-100">
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 mx-auto">
+                    <p>hola, probando texto, texto, texto.</p>
+                </div>
+            </div>
+        </div>
+        
         <script>
             var e = ["Marge Simpson", "Homer Simpson", "Bart Simpson", "Lisa Simpson", "Maggie Simpson","Ayudante de santa","Bola de nieve", "El mundo de la muela"];
                 
@@ -39,6 +48,7 @@
                 dad: "Homer Simpson",
                 children: ["Bart Simpson", "Lisa Simpson", "Maggie Simpson"],
             };
+            document.querySelector("#favoritismo").insertAdjacentHTML("beforeend", g.children[0]);
             var h = [
                 {
                     mom: "Luann",
